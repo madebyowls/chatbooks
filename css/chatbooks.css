@@ -118,7 +118,7 @@ nav.floater{
 		overflow: hidden;
 		width: 241px;
 		height: 70px;
-		background: url(../img/sprite.png) top left no-repeat;
+		background: url(../img/sprite.png) left top no-repeat;
 		background-image: none, url(../img/sprite.svg);
 	}
 
@@ -160,6 +160,8 @@ nav.floater{
 header{
 	background: url(../img/header.jpg) center center no-repeat;
 	background-size: cover;
+	position: relative;
+	margin-bottom: 40px;
 }
 
 	header .container{
@@ -190,3 +192,53 @@ header{
 	header .content .app-store{
 		margin-right: 10px;
 	}
+
+	header:after{
+		content:'';
+		position:absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		height: 74px;
+		/*box-shadow: 0 0 10px red;*/
+		background: url(../img/sprite.png) 0 -174px repeat-x;
+		background-image: none, url(../img/sprite.svg);
+	}
+
+	header ~ .container{
+		/*margin-top: */
+	}
+
+section.group-chat img,
+section.photo-books img{
+	float: left;
+	margin: 0 30px 0 75px;
+}
+
+section.group-chat h2,
+section.photo-books h2{
+	margin-top: 20px;
+	float: left;
+}
+
+section.group-chat p,
+section.photo-books p{
+	max-width: 50%;
+	float: left;
+}
+
+
+section.share,
+section.no-iphone{
+text-align: center;
+}
+
+section.share p,
+section.no-iphone p{
+	color: #999999;
+}
+
+section.share img,
+section.no-iphone img{
+	margin-bottom: 20px;
+}
