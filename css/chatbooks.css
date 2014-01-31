@@ -761,6 +761,22 @@ footer{
 		}
 	}
 
+	@media (max-width: 575px){
+		footer .pull-left,
+		footer .pull-right{
+			float: none;
+			text-align: center;
+		}
+
+		footer nav{
+			margin-top: 10px;
+		}
+
+		footer nav a{
+			padding: 7px 13px;
+		}
+	}
+
 	@media (max-width: 400px){
 
 		section.group-chat .text,
